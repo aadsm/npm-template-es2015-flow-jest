@@ -10,7 +10,7 @@ The package.json and skeleton provided gives you a ready to use project configur
 ## How to use
 ```bash
 curl -L https://github.com/aadsm/npm-template-es2015-flow-jest/tarball/master | tar zx
-mv npm-template-es2015-flow-jest* project-name
+mv aadsm-npm-template-es2015-flow-jest* project-name
 cd project-name && npm install
 ```
 
