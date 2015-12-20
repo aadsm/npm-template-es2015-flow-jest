@@ -23,8 +23,8 @@
     "test": "jest",
     "build": "babel src --ignore __tests__,__mocks__ --out-dir build",
     "watch": "babel --ignore __tests__,__mocks__ --watch src --out-dir build",
-    "browser-dev": "mkdir -p dist && browserify src/index.js -o dist/browser.js -s projectName -t [ babelify --plugins [ transform-flow-strip-types ] --presets [ es2015 ] ]",
-    "browser-watch": "mkdir -p dist && watchify src/index.js -v -o dist/browser.js -s projectName -t [ babelify --plugins [ transform-flow-strip-types ] --presets [ es2015 ] ]",
+    "browser-dev": "mkdir -p dist && browserify src/index.js -o dist/browser.js -s projectName -t [ babelify ]",
+    "browser-watch": "mkdir -p dist && watchify src/index.js -v -o dist/browser.js -s projectName -t [ babelify ]",
     "browser": "npm run browser-dev && uglifyjs dist/browser.js -o dist/browser.min.js -c"
   },
   "jest": {
