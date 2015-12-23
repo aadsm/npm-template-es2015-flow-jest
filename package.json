@@ -21,7 +21,9 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "babel src --ignore __tests__,__mocks__ --out-dir build",
+    "build": "npm run build-babel && npm run build-export-flow",
+    "build-babel": "babel src --ignore __tests__,__mocks__ --out-dir build",
+    "build-export-flow": "find src -not \\( -path '*__tests__*' -prune \\) -not \\( -path '*__mocks__*' -prune \\) -name \\*js | while read filename; do cp $filename build/${filename##src/}.flow; done",
     "watch": "babel --ignore __tests__,__mocks__ --watch src --out-dir build",
     "browser-dev": "mkdir -p dist && browserify src/index.js -o dist/browser.js -s projectName -t [ babelify ]",
     "browser-watch": "mkdir -p dist && watchify src/index.js -v -o dist/browser.js -s projectName -t [ babelify ]",

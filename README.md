@@ -34,6 +34,8 @@ npm install
 ### Publishing to npm
 When running `npm publish` only the `dist/` directory will be published. So before doing it, run `npm run dist`.
 
+Flow types are preserved by shipping the original annotated source code with a `.flow.js` extension. Dependents of your library that use flow will automatically use these files for type checking. This is a feature provided by flow.
+
 ### Browser distribution
 `npm run browser` - bundles your code using browserify and uglifyjs. It produces  `dist/browser.js` (development version) and `dist/browser.min.js` (production version) that you can include in your webapp.
 
