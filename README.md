@@ -5,6 +5,7 @@ The package.json and skeleton provided gives you a ready to use project configur
 * Use [ES2015](https://babeljs.io/docs/learn-es2015/) in your code
 * Use [Flow](http://flowtype.org/) types
 * Run [Jest](https://facebook.github.io/jest/) tests
+* Use [ESLint](http://eslint.org/) rules
 * Publish to npm
 * Distribute to the browser
 
@@ -27,6 +28,9 @@ npm install
 
 ### Testing
 `npm test` - runs all jest tests located in `src/__tests__/`.
+
+### Linting
+`npm run lint` - lints the source code using rules defined in `[.eslintrc.json](https://github.com/aadsm/npm-template-es2015-flow-jest/blob/master/.eslintrc.json)`. Check [ESLint user guide](http://eslint.org/docs/user-guide/configuring) to learn how to configure it.
 
 ### Developing
 `npm run watch` - watches `src/` for changes and updates `dist/` as needed.
