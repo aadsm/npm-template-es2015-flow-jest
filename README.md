@@ -30,7 +30,7 @@ npm install
 `npm test` - runs all jest tests located in `src/__tests__/`.
 
 ### Linting
-`npm run lint` - lints the source code using rules defined in `[.eslintrc.json](https://github.com/aadsm/npm-template-es2015-flow-jest/blob/master/.eslintrc.json)`. Check [ESLint user guide](http://eslint.org/docs/user-guide/configuring) to learn how to configure it.
+`npm run lint` - lints the source code using rules defined in [`.eslintrc.json`](https://github.com/aadsm/npm-template-es2015-flow-jest/blob/master/.eslintrc.json). Check [ESLint user guide](http://eslint.org/docs/user-guide/configuring) to learn how to configure it.
 
 ### Developing
 `npm run watch` - watches `src/` for changes and updates `dist/` as needed.
